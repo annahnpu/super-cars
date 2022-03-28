@@ -407,6 +407,9 @@ justify-content: space-between;
 /*about end*/
 
 /*process start*/
+.process {
+    padding-top: 50px;
+}
 
 .process__title {
 margin-bottom: 50px;
@@ -414,7 +417,6 @@ font-size: 148px;
 font-weight: 900;
 text-transform: uppercase;
 text-align: center;
-line-height: 1;
 }
 
 .process__subtitle {
@@ -475,24 +477,24 @@ max-width: 440px;
     background-color: transparent;
 }
 
-.input:focus + .label{
-    transform: translateY(-10px);
-    font-size: 12px;
-}
-
 .input:not(:placeholder-shown) + .label{
-    transform: translateY(-10px);
+    transform: translateY(-20px);
     font-size: 12px;
 }
 
-.label {
+.input:focus + .label{
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+.label { 
     letter-spacing: 0.15em;
-    color: #fff;
+    color: #fff; 
     position: absolute;
     top: 10px;
     left: 20px;
     pointer-events: none;
-    transition: all .2s ease;
+    transition: all .2s ease;   
 }
 
 .textarea {
@@ -509,13 +511,9 @@ max-width: 440px;
     background-color: transparent;
 }
 
-.textarea:focus + .label {
-    transform: translateY(-15px);
-    font-size: 12px;
-}
-
+.textarea:focus + .label, 
 .textarea:not(:placeholder-shown) + .label {
-    transform: translateY(-15px);
+    transform: translateY(-20px);
     font-size: 12px;
 }
 
